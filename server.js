@@ -53,6 +53,8 @@ setInterval(() => {
 }, 10000);
 
 
+app.use(express.static('./public'));
+
 app.get('/api/image', (req, res) => {
 
     // let cloudimage = new CloudImage(rDatas)
